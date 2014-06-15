@@ -21,6 +21,7 @@ $pageErrorLogLocation = dirname(__FILE__) . '/' . $page . '/errors.log';
 ini_set('error_log', $pageErrorLogLocation);
 
 // enable scripts
+// TODO: implement html-compressor to make page responses more efficient
 include_once 'scripts/html-compressor.php';
 ?>
 <!DOCTYPE html>
