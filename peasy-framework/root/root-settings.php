@@ -3,9 +3,9 @@ $debug = true;
 
 $pathToRoot = '../';
 
-$pageTitle = '';
+$pageTitle = 'Root Page';
 
-$pageDescription = '';
+$pageDescription = 'The root page of the site is the same as the homepage!';
 
 $pageImages = "images/";
 $pageJS = "js/";

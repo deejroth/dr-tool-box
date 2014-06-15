@@ -9,7 +9,7 @@ if (isset($_GET['p'])) {
 
 //load the settings for the specified page
 require_once $page . '/' . $page . '-settings.php';
-
+require_once 'functions/index.php';
     // show error messages on page if $debug is set to true
     if ($debug === true) {
         // show errors on page
@@ -29,13 +29,21 @@ require_once $page . '/' . $page . '-settings.php';
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Set, Get, Load Page Title</title>
+        <title><?php
+            // TODO: Better control over initial site configuration
+            (trim($pageTitle) != '') ? printf('%s', $pageTitle): printf('%s', 'Peasy Framework');
+        ?></title>
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <meta name="description" value="<?php printf('%s', $pageDescription);?>" />
         <link rel="stylesheet" href="elements/css/kube.min.css" />
         <link rel="stylesheet" href="elements/css/custom.css" />
+
+        <?php
+            // load custom css for the page
+            require_once 'include_css.php';
+        ?>
     </head>
     <body>
         <?php
