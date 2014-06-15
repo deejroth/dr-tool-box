@@ -1,15 +1,8 @@
 <?php
-// get page name if set
-if (isset($_GET['p'])) {
-    # TODO: validate page variable
-    $page = trim($_GET['p']);
-} else {
-    $page = 'root'; // no page? default to root!
-}
+require_once 'get_pagename.php';
 
 //load the settings for the specified page
 require_once $page . '/' . $page . '-settings.php';
-require_once 'functions/index.php';
     // show error messages on page if $debug is set to true
     if ($debug === true) {
         // show errors on page
