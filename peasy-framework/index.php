@@ -54,15 +54,15 @@ ini_set('error_log', $pageErrorLogLocation);
         <?php
         include_once "elements/_navigation.php";
         ?>
-
+        <hr class="unit-100 unit-centered">
         <?php
         require_once 'elements/_header.php';
         ?>
-
+        <hr class="unit-100 unit-centered">
         <?php
         require_once 'elements/_content.php';
         ?>
-
+        <hr class="unit-100 unit-centered">
         <?php
         require_once 'elements/_footer.php';
         ?>

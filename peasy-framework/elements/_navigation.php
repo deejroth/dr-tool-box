@@ -1,6 +1,7 @@
-<div class="group unit-80 unit-centered">
+<div class="group unit-90 unit-centered">
     <nav class="navbar navbar-left">
         <ul>
+            <li><img src="http://lorempixel.com/55/55/sports" /></li>
             <li>Home</li>
             <li>About</li>
             <li>Services</li>
