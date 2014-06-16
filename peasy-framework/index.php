@@ -1,10 +1,13 @@
 <?php
-require_once 'get_pagename.php';
+// decide what the name of the page shall be
+require_once 'elements/_pagename.php';
 
 //load the settings for the specified page
 require_once $page . '/' . $page . '-settings.php';
 
 // show error messages on page if $debug is set to true
+// can be turned off in $page-settings.php
+// TODO: Security issue? Not really needed? Make a decision!
 if ($debug === true) {
     // show errors on page
     error_reporting(E_ALL);
@@ -16,14 +19,17 @@ if ($debug === true) {
 $currentLogging = ini_get('log_errors');
 ini_set('log_errors', 1);
 
+// set the location of the error log
+// TODO: Does this need to be reset to a default?
 $currentLogLocation = ini_get('error_log');
 $pageErrorLogLocation = dirname(__FILE__) . '/' . $page . '/errors.log';
 ini_set('error_log', $pageErrorLogLocation);
 
 // enable scripts
 // TODO: implement html-compressor to make page responses more efficient
-include_once 'scripts/html-compressor.php';
+#include_once 'scripts/html-compressor.php';
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -40,25 +46,25 @@ include_once 'scripts/html-compressor.php';
 
         <?php
         // load custom css for the page
-        require_once 'include_css.php';
+        require_once 'elements/_css.php';
         ?>
+
     </head>
     <body>
         <?php
-        // TODO: load navigation
+        include_once "elements/_navigation.php";
         ?>
+
         <?php
-        // TODO: load header
+        require_once 'elements/_header.php';
         ?>
+
         <?php
-            require_once 'include_content.php';
+        require_once 'elements/_content.php';
         ?>
+
         <?php
-        // TODO: load footer
+        require_once 'elements/_footer.php';
         ?>
     </body>
 </html>
-<?php
-// TODO: return error logging to original state? not clear if functionality is needed
-// ini_set('log_errors', $currentLogging);
-?>
