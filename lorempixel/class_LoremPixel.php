@@ -5,6 +5,7 @@
  *
  * @author DeeJRoth <i.am@beardedfolk.com> <http://github.com/deejroth>
  *
+ * @todo Add option for gray images
  */
 class LoremPixel {
 
