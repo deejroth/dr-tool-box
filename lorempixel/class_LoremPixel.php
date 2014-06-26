@@ -6,6 +6,7 @@
  * @author DeeJRoth <i.am@beardedfolk.com> <http://github.com/deejroth>
  *
  * @todo Add option for gray images
+ * @todo Add method for retrieving all and last error message
  */
 class LoremPixel {
 
