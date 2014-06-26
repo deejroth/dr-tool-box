@@ -1,3 +1,3 @@
 
 var ApiGen = ApiGen || {};
-ApiGen.elements = [["c","LoremPixel"]];
+ApiGen.elements = [["c","LoremPixel\\Lorem_Pixel"]];

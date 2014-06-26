@@ -1,4 +1,7 @@
 <?php
+/**
+ * This file is the template file. It pulls from diferent directories in order to create the entire page
+ */
 // decide what the name of the page shall be
 require_once 'elements/_pagename.php';
 
@@ -34,7 +37,7 @@ ini_set('error_log', $pageErrorLogLocation);
 <html>
     <head>
         <title><?php
-            // TODO: Better control over initial site configuration
+// TODO: Better control over initial site configuration
             (trim($pageTitle) != '') ? printf('%s', $pageTitle) : printf('%s',
                         'Peasy Framework');
             ?></title>
@@ -48,7 +51,7 @@ ini_set('error_log', $pageErrorLogLocation);
 
         <!-- load custom css for page -->
         <?php
-        // load custom css for the page
+// load custom css for the page
         require_once 'elements/_css.php';
         ?>
     </head>
@@ -73,7 +76,7 @@ ini_set('error_log', $pageErrorLogLocation);
 
         <!-- load custom javascript for page -->
         <?php
-        // TODO: add site wide javascript to template page
+// TODO: add site wide javascript to template page
         require_once 'elements/_javascript.php';
         ?>
     </body>

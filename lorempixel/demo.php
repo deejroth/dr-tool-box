@@ -16,22 +16,22 @@
         $image = new LoremPixel(200, 200);
 
         echo '<p>Show Random Image</p>';
-        printf('<img src="%s" />', $image->GetRandomImage());
+        printf('<img src="%s" />', $image->getRandomImage());
 
         echo '<p>Show random image from default category (sports)</p>';
-        printf('<img src="%s" />', $image->GetImageCategory());
+        printf('<img src="%s" />', $image->getImageCategory());
 
         echo '<p>Get random image from default category with default '
         . 'dummy-text</p>';
-        printf('<img src="%s" />', $image->GetImageCategoryDtext());
+        printf('<img src="%s" />', $image->getImageCategoryDtext());
 
         echo '<p>Get specific number ' . $image->imageNumber . ' from default '
                 . 'category</p>';
-        printf('<img src="%s" />', $image->GetImageCategoryNum());
+        printf('<img src="%s" />', $image->getImageCategoryNum());
 
         echo '<p>Get specific number ' . $image->imageNumber . ' from default '
                 . 'category with default Dummy-Text</p>';
-        printf('<img src="%s" />', $image->GetImageCategoryNumberDtext());
+        printf('<img src="%s" />', $image->getImageCategoryNumberDtext());
         ?>
     </body>
 </html>
