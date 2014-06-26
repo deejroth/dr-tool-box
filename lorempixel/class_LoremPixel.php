@@ -10,12 +10,46 @@
  */
 class LoremPixel {
 
+    /**
+     * The URL to the LoremPixel Service
+     * @var string
+     */
     private $url = 'http://lorempixel.com';
+
+    /**
+     * Holds errors as errors[method_name]='error'
+     * @var array
+     */
     public $errors = array();
+
+    /**
+     * The width of the expected image
+     * @var integer Defaults to 640
+     */
     public $width;
+
+    /**
+     * The height of the expected image
+     * @var integer Defaults to 480
+     */
     public $height;
+
+    /**
+     * The category to pull the images from
+     * @var string Run showCategories() method to see categories, Defaults to 'sports'
+     */
     public $category;
+
+    /**
+     * The string to use as dummy text
+     * @var string No special chars, change spaces to hyphen, Defaults to 'Dummy-Text'
+     */
     public $dummyText;
+
+    /**
+     * Which image number to use from the specified category
+     * @var integer Range of 1 to 10, Defaults to random between 1 and 10
+     */
     public $imageNumber;
 
     /**
