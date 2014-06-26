@@ -1,7 +1,6 @@
 <?php
-$debug = true;
 
-$pathToRoot = '../';
+$debug = true;
 
 $pageTitle = 'Root Page';
 

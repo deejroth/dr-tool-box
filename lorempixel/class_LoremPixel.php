@@ -39,7 +39,7 @@ class LoremPixel {
         $this->dummyText = 'Dummy-Text';
 
         // image number defaults to random between 1 and 10
-        $this->imageNumber = rand(1,10);
+        $this->imageNumber = rand(1, 10);
     }
 
     /**
@@ -48,7 +48,7 @@ class LoremPixel {
      */
     public function GetRandomImage() {
         return sprintf(
-                '%s/%d/%d', $this->url, $this->width, $this->height
+            '%s/%d/%d', $this->url, $this->width, $this->height
         );
     }
 
@@ -58,12 +58,12 @@ class LoremPixel {
      * @return bool
      */
     public function SetWidth($width) {
-        if (is_int($width)) {
+        if ( is_int($width) ) {
             $this->width = $width;
             return true;
         } else {
             $this->errors['SetWidth'] = 'Incorrect data type, expected '
-                    . 'integer type.';
+                . 'integer type.';
             return false;
         }
     }
@@ -74,12 +74,12 @@ class LoremPixel {
      * @return bool
      */
     public function SetHeigth($height) {
-        if (is_int($height)) {
+        if ( is_int($height) ) {
             $this->height = $height;
             return true;
         } else {
             $this->errors['SetHeight'] = 'Incorrect data type, expected '
-                    . 'integer type.';
+                . 'integer type.';
             return false;
         }
     }
@@ -90,12 +90,12 @@ class LoremPixel {
      * @return bool
      */
     public function SetCategory($category) {
-        if (is_string($category) && $category != '') {
+        if ( is_string($category) && $category != '' ) {
             $this->category = $category;
             return true;
         } else {
             $this->errors['SetCategory'] = 'Incorrect data type, expected '
-                    . 'non-zero length string type.';
+                . 'non-zero length string type.';
             $this->category = '';
             return false;
         }
@@ -129,18 +129,18 @@ class LoremPixel {
      * @return boolean
      */
     public function SetImageNumber($imageNumber) {
-        if (is_int($imageNumber)) {
-            if ($imageNumber > 0 && $imageNumber <= 10) {
+        if ( is_int($imageNumber) ) {
+            if ( $imageNumber > 0 && $imageNumber <= 10 ) {
                 $this->imageNumber = $imageNumber;
                 return true;
             } else {
                 $this->errors['SetImageNumber'] = 'Image number must be '
-                        . 'greater than 0, and less than 10';
+                    . 'greater than 0, and less than 10';
                 return false;
             }
         } else {
             $this->errors['SetImageNumber'] = 'Incorrect data type, expected '
-                    . 'integer type.';
+                . 'integer type.';
             return false;
         }
     }
@@ -150,15 +150,14 @@ class LoremPixel {
      * @return string|boolean
      */
     public function GetImageCategory() {
-        if (is_string($this->category) || $this->category != '') {
+        if ( is_string($this->category) || $this->category != '' ) {
             return sprintf(
-                    '%s/%s', $this->GetRandomImage(),
-                    $this->category
+                '%s/%s', $this->GetRandomImage(), $this->category
             );
         } else {
             $this->errors['GetImageByCategory'] = 'Category must not be left '
-                    . 'blank and must be of string format. Did you set the '
-                    . 'category by calling the SetCategory method?';
+                . 'blank and must be of string format. Did you set the '
+                . 'category by calling the SetCategory method?';
             return false;
         }
     }
@@ -169,27 +168,26 @@ class LoremPixel {
      *
      * @return string|boolean
      */
-    public function GetImageCategoryNum(){
-        if(is_int($this->imageNumber)){
+    public function GetImageCategoryNum() {
+        if ( is_int($this->imageNumber) ) {
             return sprintf(
-                    '%s/%d',
-                    $this->GetImageCategory(), $this->imageNumber
+                '%s/%d', $this->GetImageCategory(), $this->imageNumber
             );
         } else {
             $this->errors['GetImageNumberFromCategory'] = 'Image numbers must'
-                    . ' be set by calling the SetImageNumber method. Image '
-                    . 'numbers mst also be of integer type.';
+                . ' be set by calling the SetImageNumber method. Image '
+                . 'numbers mst also be of integer type.';
             return false;
         }
     }
 
-    public function SetDummyText($dText = 'Dummy-Text'){
-        if(is_string($dText) && $dText != ''){
+    public function SetDummyText($dText = 'Dummy-Text') {
+        if ( is_string($dText) && $dText != '' ) {
             $this->dummyText = $dText;
             return true;
         } else {
             $this->errors['SetDummyText'] = 'Dummy text must be a string with '
-                    . 'no symbols. Space should also be converted to hyphens.';
+                . 'no symbols. Space should also be converted to hyphens.';
             return false;
         }
     }
@@ -198,7 +196,7 @@ class LoremPixel {
      * Returns an image URL for a specific category with Dummy-Text
      * @return string
      */
-    public function GetImageCategoryDtext(){
+    public function GetImageCategoryDtext() {
         return sprintf('%s/%s', $this->GetImageCategory(), $this->dummyText);
     }
 
@@ -206,7 +204,8 @@ class LoremPixel {
      * Returns an image url for a specific image in a category with Dummy-Text
      * @return string
      */
-    public function GetImageCategoryNumberDtext(){
+    public function GetImageCategoryNumberDtext() {
         return sprintf('%s/%s', $this->GetImageCategoryNum(), $this->dummyText);
     }
+
 }
