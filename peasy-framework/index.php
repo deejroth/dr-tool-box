@@ -42,23 +42,14 @@ ini_set('error_log', $pageErrorLogLocation);
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" value="<?php printf('%s', $pageDescription);?>" />
-        <link rel="stylesheet" href="<?php printf('%s', $pathToRoot);?>elements/css/kube.min.css" />
-        <link rel="stylesheet" href="<?php printf('%s', $pathToRoot);?>elements/css/custom.css" />
+        <base href="http://peasy.beardeddev.webfactional.com/" target="_parent" >
+        <link rel="stylesheet" href="elements/css/kube.min.css" />
+        <link rel="stylesheet" href="elements/css/custom.css" />
 
+        <!-- load custom css for page -->
         <?php
         // load custom css for the page
         require_once 'elements/_css.php';
-        ?>
-
-        <!-- load javascript -->
-        <?php
-        // TODO: add site wide javascript to template page
-        ?>
-
-
-        <!-- load custom javascript for the page -->
-        <?php
-        // TODO: load custom javascript for the current page
         ?>
     </head>
     <body>
@@ -76,6 +67,14 @@ ini_set('error_log', $pageErrorLogLocation);
         <hr class="unit-100 unit-centered">
         <?php
         require_once 'elements/_footer.php';
+        ?>
+
+
+
+        <!-- load custom javascript for page -->
+        <?php
+        // TODO: add site wide javascript to template page
+        require_once 'elements/_javascript.php';
         ?>
     </body>
 </html>
