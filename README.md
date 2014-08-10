@@ -7,8 +7,7 @@ Tools I created cause I needed them at the time or was bored. Please feel free t
 ===========
 
 - Peasy Framework: A super easy to use php framework
-  - Decided to make this because I was bored on a Sunday morning
-  - Uses [Kube](http://imperavi.com/kube/) for the css
+  - DISCONTINUED
 - LoremPixel class, generate images quickly with the [LoremPixel](http://lorempixel.com) service
   - 1st, please note that I did not make the service, just this class
   - I made this class becuase I really like the service and use it quite often
