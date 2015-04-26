@@ -13,4 +13,4 @@ Tools I created cause I needed them at the time or was bored. Please feel free t
   - I made this class becuase I really like the service and use it quite often
   - Also, I needed some more practice on writing and optimizing OO code
   - I am not a pro OO coder, and would love some feedback on this 
-  - **Documentation** at [LoremPixel Docs via djrth.us](http://docs.djrth.us/lorem-pixel/)
+  - **Documentation** at [LoremPixel Docs via djrth.rocks](http://docs.djrth.rocks/lorem-pixel/)
