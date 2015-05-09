@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<<<<<<< HEAD:app/LoremPixel_demo.php
 <?php
 
 require_once '../vendor/autoload.php';
 
 ?>
+=======
+>>>>>>> da842f9... Added APIgen configuration:LoremPixel_demo.php
 <html>
     <head>
         <meta charset="UTF-8">

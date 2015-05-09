@@ -33,7 +33,8 @@ These are tools I created because I needed them at the time or was bored. Please
   - run `apigen generate`
   - [Toolbox Documentation](http://mytoolbox.com/docs/)
 - pdepend
-  - (NYI)
+  - config: none
+  - run `pdepend --summary-xml=logs/pdepend.xml app/`
 - phpcbf
   - (NYI)
 - phpcpd

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="./vendor/autoload.php"
+<<<<<<< HEAD
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          stopOnFailures="false"
          beStrictAboutTestsThatDoNotTestAnything="true"
+=======
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnFailures="false"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+>>>>>>> da842f9... Added APIgen configuration
 >
     <testsuites>
         <testsuite name="LoremPixel Unit Tests">

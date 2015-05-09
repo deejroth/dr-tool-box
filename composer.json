@@ -14,9 +14,15 @@
         "phpunit/php-invoker": "~1.1"
     },
     "autoload": {
+<<<<<<< HEAD
         "psr-4": {
             "": "app/"
         },
+=======
+        "classmap": [
+            "app/"
+        ],
+>>>>>>> da842f9... Added APIgen configuration
         "files": [
             "app_settings.php"
         ]

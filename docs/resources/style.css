@@ -426,6 +426,7 @@ div.tree span.padding {
 /* Source code */
 #source {
 	margin: 1em 0 1em 1em;
+<<<<<<< HEAD
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	overflow: auto;
@@ -444,6 +445,9 @@ div.tree span.padding {
 
 #source .code {
 
+=======
+	padding: 0;
+>>>>>>> da842f9... Added APIgen configuration
 }
 
 .php-keyword1 {

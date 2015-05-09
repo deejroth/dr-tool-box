@@ -1,7 +1,11 @@
 <?php
+<<<<<<< HEAD
 
 namespace LoremPixel;
 
+=======
+namespace LoremPixel;
+>>>>>>> da842f9... Added APIgen configuration
 /**
  * Easily create placeholder images using the lorempixel service!
  *
@@ -9,9 +13,15 @@ namespace LoremPixel;
  * the Lorem Pixel image placeholder service.
  *
  * PHP version 5.5
+<<<<<<< HEAD
  *
  * @package   LoremPixel
  *
+=======
+ * 
+ * @package   LoremPixel
+ * 
+>>>>>>> da842f9... Added APIgen configuration
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -26,17 +36,26 @@ namespace LoremPixel;
 
 /**
  * Sets up the url for a placeholder image from LoremPixel
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> da842f9... Added APIgen configuration
  * @package  LoremPixel
  *
  * @author   DeeJRoth <i.am@beardedfolk.com>
  * @license  http://opensource.org/licenses/MIT MIT
  *
  * @example  /LoremPixel_demo.php Demo of use of LoremPixel class, see file on GitHub
+<<<<<<< HEAD
  *
  * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
  *
  * @todo [ ] Make tests
+=======
+ *
+ * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
+>>>>>>> da842f9... Added APIgen configuration
  */
 class LoremPixel implements LoremPixelInterface
 {

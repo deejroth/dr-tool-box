@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 namespace LoremPixel;
+=======
+
+>>>>>>> da842f9... Added APIgen configuration
 /*
  * The MIT License
  *
@@ -29,6 +33,10 @@ namespace LoremPixel;
  *
  * @author DeeJRoth <i.am@beardedfolk.com>
  */
+<<<<<<< HEAD
 class LoremPixelTest extends \PHPUnit_Framework_TestCase{
+=======
+class LoremPixelTest {
+>>>>>>> da842f9... Added APIgen configuration
     //put your code here
 }
