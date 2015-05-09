@@ -1,5 +1,7 @@
 <?php
 
+namespace LoremPixel;
+
 /**
  * Easily create placeholder images using the lorempixel service!
  *
@@ -8,8 +10,8 @@
  *
  * PHP version 5.5
  *
- * @category  PHP
- * @package   LoremPixelClass
+ * @package   LoremPixel
+ *
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -22,25 +24,21 @@
  * @access public
  */
 
-namespace LoremPixel;
-
 /**
  * Sets up the url for a placeholder image from LoremPixel
  *
- * @category PHP
- * @package  LoremPixelClass
+ * @package  LoremPixel
  *
  * @author   DeeJRoth <i.am@beardedfolk.com>
  * @license  http://opensource.org/licenses/MIT MIT
  *
- * @example  /demo.php Demo of use of LoremPixel class, see file on GitHub
+ * @example  /LoremPixel_demo.php Demo of use of LoremPixel class, see file on GitHub
  *
- * @link     https://github.com/deejroth/dr-tool-box/tree/master/lorempixel
+ * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
  *
- * @todo Add option for gray images
- * @todo Add method for retrieving all and last error message
+ * @todo [ ] Make tests
  */
-class Lorem_Pixel
+class LoremPixel implements LoremPixelInterface
 {
 
     /**
@@ -133,7 +131,7 @@ class Lorem_Pixel
     public function getRandomImage()
     {
         return sprintf(
-            '%s/%d/%d', $this->_url, $this->width, $this->height
+                '%s/%d/%d', $this->_url, $this->width, $this->height
         );
     }
 
@@ -151,7 +149,7 @@ class Lorem_Pixel
             return true;
         } else {
             $this->errors['SetWidth'] = 'Incorrect data type, expected '
-                . 'integer type.';
+                    . 'integer type.';
             return false;
         }
     }
@@ -163,14 +161,14 @@ class Lorem_Pixel
      *
      * @return bool
      */
-    public function setHeigth($height)
+    public function setHeight($height)
     {
         if (is_int($height)) {
             $this->height = $height;
             return true;
         } else {
             $this->errors['SetHeight'] = 'Incorrect data type, expected '
-                . 'integer type.';
+                    . 'integer type.';
             return false;
         }
     }
@@ -189,7 +187,7 @@ class Lorem_Pixel
             return true;
         } else {
             $this->errors['SetCategory'] = 'Incorrect data type, expected '
-                . 'non-zero length string type.';
+                    . 'non-zero length string type.';
             $this->category = '';
             return false;
         }
@@ -234,12 +232,12 @@ class Lorem_Pixel
                 return true;
             } else {
                 $this->errors['SetImageNumber'] = 'Image number must be '
-                    . 'greater than 0, and less than 10';
+                        . 'greater than 0, and less than 10';
                 return false;
             }
         } else {
             $this->errors['SetImageNumber'] = 'Incorrect data type, expected '
-                . 'integer type.';
+                    . 'integer type.';
             return false;
         }
     }
@@ -253,12 +251,12 @@ class Lorem_Pixel
     {
         if (is_string($this->category) || $this->category != '') {
             return sprintf(
-                '%s/%s', $this->getRandomImage(), $this->category
+                    '%s/%s', $this->getRandomImage(), $this->category
             );
         } else {
             $this->errors['GetImageByCategory'] = 'Category must not be left '
-                . 'blank and must be of string format. Did you set the '
-                . 'category by calling the SetCategory method?';
+                    . 'blank and must be of string format. Did you set the '
+                    . 'category by calling the SetCategory method?';
             return false;
         }
     }
@@ -273,12 +271,12 @@ class Lorem_Pixel
     {
         if (is_int($this->imageNumber)) {
             return sprintf(
-                '%s/%d', $this->getImageCategory(), $this->imageNumber
+                    '%s/%d', $this->getImageCategory(), $this->imageNumber
             );
         } else {
             $this->errors['GetImageNumberFromCategory'] = 'Image numbers must'
-                . ' be set by calling the SetImageNumber method. Image '
-                . 'numbers mst also be of integer type.';
+                    . ' be set by calling the SetImageNumber method. Image '
+                    . 'numbers mst also be of integer type.';
             return false;
         }
     }
@@ -297,7 +295,7 @@ class Lorem_Pixel
             return true;
         } else {
             $this->errors['SetDummyText'] = 'Dummy text must be a string with '
-                . 'no symbols. Space should also be converted to hyphens.';
+                    . 'no symbols. Space should also be converted to hyphens.';
             return false;
         }
     }
