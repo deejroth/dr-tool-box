@@ -1,5 +1,5 @@
 <?php
-
+namespace LoremPixel;
 /**
  * Easily create placeholder images using the lorempixel service!
  *
@@ -7,9 +7,9 @@
  * the Lorem Pixel image placeholder service.
  *
  * PHP version 5.5
- *
- * @category  PHP
- * @package   LoremPixelClass
+ * 
+ * @package   LoremPixel
+ * 
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -22,25 +22,19 @@
  * @access public
  */
 
-namespace LoremPixel;
-
 /**
  * Sets up the url for a placeholder image from LoremPixel
- *
- * @category PHP
- * @package  LoremPixelClass
+ * 
+ * @package  LoremPixel
  *
  * @author   DeeJRoth <i.am@beardedfolk.com>
  * @license  http://opensource.org/licenses/MIT MIT
  *
- * @example  /demo.php Demo of use of LoremPixel class, see file on GitHub
+ * @example  /LoremPixel_demo.php Demo of use of LoremPixel class, see file on GitHub
  *
- * @link     https://github.com/deejroth/dr-tool-box/tree/master/lorempixel
- *
- * @todo Add option for gray images
- * @todo Add method for retrieving all and last error message
+ * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
  */
-class Lorem_Pixel
+class LoremPixel implements LoremPixelInterface
 {
 
     /**
@@ -163,7 +157,7 @@ class Lorem_Pixel
      *
      * @return bool
      */
-    public function setHeigth($height)
+    public function setHeight($height)
     {
         if (is_int($height)) {
             $this->height = $height;

@@ -1,8 +1,3 @@
-<?php
-//error_reporting(E_ALL);
-//ini_set('error_reporting', E_ALL);
-//ini_set('display_errors', 1);
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,9 +6,8 @@
     </head>
     <body>
         <?php
-        include 'class_LoremPixel.php';
 
-        $image = new LoremPixel(200, 200);
+        $image = new LoremPixel\LoremPixel(200, 200);
 
         echo '<p>Show Random Image</p>';
         printf('<img src="%s" />', $image->getRandomImage());
