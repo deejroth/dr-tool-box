@@ -1,6 +1,10 @@
 
 var ApiGen = ApiGen || {};
+<<<<<<< HEAD
 ApiGen.config = {"options":{"elementDetailsCollapsed":true,"elementsOrder":"natural"},"name":"Twitter Bootstrap theme","templatesPath":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src","resources":{"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/resources":"resources"},"templates":{"overview":{"filename":"index.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/overview.latte"},"combined":{"filename":"resources\/combined.js","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/combined.js.latte"},"elementlist":{"filename":"elementlist.js","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/elementlist.js.latte"},"404":{"filename":"404.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/404.latte"},"package":{"filename":"package-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/package.latte"},"namespace":{"filename":"namespace-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/namespace.latte"},"class":{"filename":"class-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/class.latte"},"constant":{"filename":"constant-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/constant.latte"},"function":{"filename":"function-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/function.latte"},"annotationGroup":{"filename":"annotation-group-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/annotation-group.latte"},"source":{"filename":"source-%s.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/source.latte"},"tree":{"filename":"tree.html","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/tree.latte"},"sitemap":{"filename":"sitemap.xml","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/sitemap.xml.latte"},"opensearch":{"filename":"opensearch.xml","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/opensearch.xml.latte"},"robots":{"filename":"robots.txt","template":"\/home\/deej\/.composer\/vendor\/apigen\/apigen\/bin\/..\/..\/..\/..\/vendor\/apigen\/theme-bootstrap\/src\/robots.txt.latte"}}};
+=======
+ApiGen.config = {"options":{"elementDetailsCollapsed":true,"elementsOrder":"natural"},"name":"Twitter Bootstrap theme","templatesPath":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src","resources":{"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/resources":"resources"},"templates":{"overview":{"filename":"index.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/overview.latte"},"combined":{"filename":"resources\/combined.js","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/combined.js.latte"},"elementlist":{"filename":"elementlist.js","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/elementlist.js.latte"},"404":{"filename":"404.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/404.latte"},"package":{"filename":"package-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/package.latte"},"namespace":{"filename":"namespace-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/namespace.latte"},"class":{"filename":"class-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/class.latte"},"constant":{"filename":"constant-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/constant.latte"},"function":{"filename":"function-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/function.latte"},"annotationGroup":{"filename":"annotation-group-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/annotation-group.latte"},"source":{"filename":"source-%s.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/source.latte"},"tree":{"filename":"tree.html","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/tree.latte"},"sitemap":{"filename":"sitemap.xml","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/sitemap.xml.latte"},"opensearch":{"filename":"opensearch.xml","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/opensearch.xml.latte"},"robots":{"filename":"robots.txt","template":"phar:\/\/\/usr\/local\/bin\/apigen\/bin\/..\/vendor\/apigen\/theme-bootstrap\/src\/robots.txt.latte"}}};
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
 
 
 	/*! jQuery v1.10.2 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
@@ -1256,7 +1260,11 @@ jQuery.fn.sortElements = (function(){
 
 		var $firstLine = $('#' + parseInt(matches[0]));
 		if ($firstLine.length > 0) {
+<<<<<<< HEAD
 			$right.scrollTop($firstLine.position().top);
+=======
+			$document.scrollTop($firstLine.offset().top);
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
 		}
 	}
 
@@ -1265,8 +1273,13 @@ jQuery.fn.sortElements = (function(){
 	$('.l a').click(function(event) {
 		event.preventDefault();
 
+<<<<<<< HEAD
 		var selectedLine = $(this).parent().index() + 1;
 		var $selectedLine = $('pre.code .l').eq(selectedLine - 1);
+=======
+		var $selectedLine = $(this).parent();
+		var selectedLine = parseInt($selectedLine.attr('id'));
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
 
 		if (event.shiftKey) {
 			if (lastLine) {

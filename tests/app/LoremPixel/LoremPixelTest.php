@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 namespace LoremPixel;
+=======
+
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
 /*
  * The MIT License
  *
@@ -29,6 +33,10 @@ namespace LoremPixel;
  *
  * @author DeeJRoth <i.am@beardedfolk.com>
  */
+<<<<<<< HEAD
 class LoremPixelTest extends \PHPUnit_Framework_TestCase{
+=======
+class LoremPixelTest {
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
     //put your code here
 }

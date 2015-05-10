@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="./vendor/autoload.php"
+<<<<<<< HEAD
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          stopOnFailures="false"
          beStrictAboutTestsThatDoNotTestAnything="true"
+=======
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    stopOnFailures="false"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
 >
     <testsuites>
         <testsuite name="LoremPixel Unit Tests">

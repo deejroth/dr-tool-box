@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<<<<<<< HEAD:app/LoremPixel_demo.php
 <?php
 
 require_once '../vendor/autoload.php';
 
 ?>
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765:LoremPixel_demo.php
 <html>
     <head>
         <meta charset="UTF-8">

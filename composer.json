@@ -14,9 +14,15 @@
         "phpunit/php-invoker": "~1.1"
     },
     "autoload": {
+<<<<<<< HEAD
         "psr-4": {
             "": "app/"
         },
+=======
+        "classmap": [
+            "app/"
+        ],
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
         "files": [
             "app_settings.php"
         ]
