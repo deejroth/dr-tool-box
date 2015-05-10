@@ -27,11 +27,11 @@ These are tools I created because I needed them at the time or was bored. Please
 - PHP Mess Detector
   - config: /tests/ruleset.xml
   - run `phpmd app/ html tests/ruleset.xml --reportfile logs/phpmd.html`
-  - [PHP Mess Detector Results](http://mytoolbox.com/logs/phpmd.html)
+  - [PHP Mess Detector Results](logs/phpmd.html)
 - APIGen
   - config: apigen.neon
   - run `apigen generate`
-  - [Toolbox Documentation](http://mytoolbox.com/docs/)
+  - [Toolbox Documentation](docs/)
 - pdepend
   - config: none
   - run `pdepend --summary-xml=logs/pdepend.xml app/`
