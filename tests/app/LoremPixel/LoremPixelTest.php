@@ -3,7 +3,11 @@
 namespace LoremPixel;
 =======
 
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 /*
  * The MIT License
  *
@@ -37,6 +41,10 @@ namespace LoremPixel;
 class LoremPixelTest extends \PHPUnit_Framework_TestCase{
 =======
 class LoremPixelTest {
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
     //put your code here
 }

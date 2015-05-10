@@ -5,7 +5,11 @@ namespace LoremPixel;
 
 =======
 namespace LoremPixel;
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 /*
  * The MIT License
  *
@@ -45,7 +49,11 @@ namespace LoremPixel;
  * 
  * @package   LoremPixel
  * 
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -68,7 +76,11 @@ namespace LoremPixel;
  * 
  * @package  LoremPixel
  * 
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @author   DeeJRoth <i.am@beardedfolk.com>
  * @license  http://opensource.org/licenses/MIT MIT
  *
@@ -125,5 +137,9 @@ interface LoremPixelInterface {
     
     public function showCategories();
     
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 }

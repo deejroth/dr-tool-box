@@ -6,7 +6,11 @@ require_once '../vendor/autoload.php';
 
 ?>
 =======
+<<<<<<< HEAD:app/LoremPixel_demo.php
 >>>>>>> da842f9... Added APIgen configuration:LoremPixel_demo.php
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765:LoremPixel_demo.php
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a:app/LoremPixel_demo.php
 <html>
     <head>
         <meta charset="UTF-8">

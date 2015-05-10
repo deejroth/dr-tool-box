@@ -5,7 +5,11 @@ namespace LoremPixel;
 
 =======
 namespace LoremPixel;
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 /**
  * Easily create placeholder images using the lorempixel service!
  *
@@ -21,7 +25,11 @@ namespace LoremPixel;
  * 
  * @package   LoremPixel
  * 
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -40,7 +48,11 @@ namespace LoremPixel;
  *
 =======
  * 
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @package  LoremPixel
  *
  * @author   DeeJRoth <i.am@beardedfolk.com>
@@ -55,7 +67,11 @@ namespace LoremPixel;
 =======
  *
  * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
+<<<<<<< HEAD
 >>>>>>> da842f9... Added APIgen configuration
+=======
+>>>>>>> da842f9f627a814885b3a7613ee07700dd576765
+>>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  */
 class LoremPixel implements LoremPixelInterface
 {
