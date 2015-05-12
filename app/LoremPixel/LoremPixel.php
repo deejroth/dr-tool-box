@@ -1,15 +1,6 @@
 <?php
-<<<<<<< HEAD
 
 namespace LoremPixel;
-
-=======
-namespace LoremPixel;
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 /**
  * Easily create placeholder images using the lorempixel service!
  *
@@ -17,19 +8,9 @@ namespace LoremPixel;
  * the Lorem Pixel image placeholder service.
  *
  * PHP version 5.5
-<<<<<<< HEAD
  *
  * @package   LoremPixel
  *
-=======
- * 
- * @package   LoremPixel
- * 
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -44,34 +25,17 @@ namespace LoremPixel;
 
 /**
  * Sets up the url for a placeholder image from LoremPixel
-<<<<<<< HEAD
  *
-=======
- * 
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @package  LoremPixel
  *
  * @author   DeeJRoth <i.am@beardedfolk.com>
  * @license  http://opensource.org/licenses/MIT MIT
  *
  * @example  /LoremPixel_demo.php Demo of use of LoremPixel class, see file on GitHub
-<<<<<<< HEAD
  *
  * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
  *
  * @todo [ ] Make tests
-=======
- *
- * @link     https://github.com/deejroth/dr-tool-box/tree/master/app/lorempixel
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  */
 class LoremPixel implements LoremPixelInterface
 {

@@ -1,15 +1,7 @@
 <?php
-<<<<<<< HEAD
 
 namespace LoremPixel;
 
-=======
-namespace LoremPixel;
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 /*
  * The MIT License
  *
@@ -41,19 +33,9 @@ namespace LoremPixel;
  * the Lorem Pixel image placeholder service.
  *
  * PHP version 5.5
-<<<<<<< HEAD
  *
  * @package   LoremPixel
  *
-=======
- * 
- * @package   LoremPixel
- * 
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @author    DeeJRoth <i.am@beardedfolk.com>
  * @copyright 2014 DeeJRoth
  * @license   http://opensource.org/licenses/MIT MIT
@@ -68,19 +50,9 @@ namespace LoremPixel;
 
 /**
  * Interface for setting up the LoremPixel class
-<<<<<<< HEAD
  *
  * @package  LoremPixel
  *
-=======
- * 
- * @package  LoremPixel
- * 
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
  * @author   DeeJRoth <i.am@beardedfolk.com>
  * @license  http://opensource.org/licenses/MIT MIT
  *
@@ -91,7 +63,6 @@ namespace LoremPixel;
  * @todo Add option for gray images
  * @todo Add method for retrieving all and last error message
  */
-<<<<<<< HEAD
 interface LoremPixelInterface
 {
 
@@ -118,28 +89,4 @@ interface LoremPixelInterface
     public function setDummyText($dText);
 
     public function showCategories();
-
-=======
-interface LoremPixelInterface {
-    public function __construct($width, $height);
-    
-    public function getRandomImage();
-    public function getImageCategory();
-    public function getImageCategoryNum();
-    public function getImageCategoryDtext();
-    public function getImageCategoryNumberDtext();
-    
-    public function setWidth($width);
-    public function setHeight($height);
-    public function setCategory($category);
-    public function setImageNumber($imageNumber);
-    public function setDummyText($dText);
-    
-    public function showCategories();
-    
-<<<<<<< HEAD
->>>>>>> da842f9... Added APIgen configuration
-=======
->>>>>>> da842f9f627a814885b3a7613ee07700dd576765
->>>>>>> 62e89d19f7382f54e8b4e59b02025a259f4e601a
 }
