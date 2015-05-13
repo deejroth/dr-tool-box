@@ -75,5 +75,4 @@ interface GoogleMapsInterface
     public function setImageTag();
 
     public function getImageTag();
-
 }

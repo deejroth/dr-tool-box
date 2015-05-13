@@ -176,8 +176,7 @@ class GoogleMaps implements GoogleMapsInterface
      */
     public function setImageAttributes(
     $altAttribute = '', $classAttribute = '', $idAttribute = ''
-    )
-    {
+    ) {
         $this->image['src'] = self::GMAPSQUERYURL;
 
         if (isset($altAttribute) && $altAttribute !== '') {
@@ -263,5 +262,4 @@ class GoogleMaps implements GoogleMapsInterface
     {
         return $this->imageTag;
     }
-
 }

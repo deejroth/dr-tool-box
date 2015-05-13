@@ -1,6 +1,7 @@
 <?php
 
 namespace LoremPixel;
+
 /**
  * Easily create placeholder images using the lorempixel service!
  *
@@ -318,5 +319,4 @@ class LoremPixel implements LoremPixelInterface
     {
         return sprintf('%s/%s', $this->getImageCategoryNum(), $this->dummyText);
     }
-
 }
