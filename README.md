@@ -18,7 +18,7 @@ These are tools I created because I needed them at the time or was bored. Please
 ------
 
 ## Tests and other utilities
--Unless Otherwise Specified
+- Unless Otherwise Specified
     - All tests are run from the root of the project (same directory as this file)
     - All config files are in the root of the project
     - Assumption is made that the command is accessible from the CLI
